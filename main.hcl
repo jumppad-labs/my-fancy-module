@@ -3,8 +3,8 @@ variable "computer" {
 }
 
 module "dependency" {
-  source = "jumppad-labs/test-module"
-  version = "0.1.0"
+  source = "github.com/jumppad-labs/test-module"
+  // version = "0.1.0"
 }
 
 resource "template" "motd" {
