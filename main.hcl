@@ -3,7 +3,7 @@ variable "computer" {
 }
 
 resource "template" "motd" {
-  data = <<-EOF
+  source = <<-EOF
   Welcome to ${variable.computer}!
   EOF
   destination = "${data("template")}/motd"
