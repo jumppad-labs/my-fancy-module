@@ -3,7 +3,7 @@ variable "computer" {
 }
 
 module "dependency" {
-  source = "jumppad-labs/my-module"
+  source = "jumppad-labs/test-module"
   version = "0.1.0"
 }
 
