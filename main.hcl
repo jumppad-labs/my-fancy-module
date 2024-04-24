@@ -1,5 +1,5 @@
 variable "computer" {
-  default = "yourmachine"
+  default = "yourmachines"
 }
 
 resource "template" "motd" {
