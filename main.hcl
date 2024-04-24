@@ -10,5 +10,5 @@ resource "template" "motd" {
 }
 
 output "motd" {
-  value = template.motd.destination
+  value = resource.template.motd.destination
 }
