@@ -2,6 +2,11 @@ variable "computer" {
   default = "localhost"
 }
 
+module "dependency" {
+  source = "jumppad-labs/my-module"
+  version = "0.1.0"
+}
+
 resource "template" "motd" {
   source = <<-EOF
   Welcome to ${variable.computer}!
