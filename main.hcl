@@ -1,5 +1,5 @@
 variable "computer" {
-  default = "localhost"
+  default = "yourmachine"
 }
 
 resource "template" "motd" {
