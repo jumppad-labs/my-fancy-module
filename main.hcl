@@ -4,7 +4,6 @@ variable "computer" {
 
 module "dependency" {
   source = "github.com/jumppad-labs/test-module"
-  // version = "0.1.0"
 }
 
 resource "template" "motd" {
