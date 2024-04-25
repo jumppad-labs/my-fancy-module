@@ -1,10 +1,11 @@
 variable "computer" {
   default = "localhost"
-  description = "The name of the computer"
+  description = "The name of the computer that it will welcome"
 }
 
 module "dependency" {
-  source = "github.com/jumppad-labs/test-module"
+  source = "jumppad-labs/test-module"
+  version = "0.1.0"
 }
 
 resource "template" "motd" {
