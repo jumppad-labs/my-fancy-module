@@ -3,10 +3,10 @@ variable "computer" {
   description = "The name of the computer that it will welcome"
 }
 
-// module "dependency" {
-//   source = "jumppad-labs/test-module"
-//   version = "0.1.0"
-// }
+module "dependency" {
+  source = "jumppad-labs/test-module"
+  version = "0.1.0"
+}
 
 resource "template" "motd" {
   source = <<-EOF
