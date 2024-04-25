@@ -1,5 +1,6 @@
 variable "computer" {
   default = "localhost"
+  description = "The name of the computer"
 }
 
 module "dependency" {
@@ -15,4 +16,5 @@ resource "template" "motd" {
 
 output "motd" {
   value = resource.template.motd.destination
+  description = "The path to the message of the day file"
 }
