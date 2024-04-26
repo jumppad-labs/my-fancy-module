@@ -1,5 +1,5 @@
 variable "computer" {
-  default = "localhost"
+  default = "new computer"
   description = "The name of the computer that it will welcome"
 }
 
